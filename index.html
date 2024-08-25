@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Roll Number</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>API Input Form</h1>
+        <form id="jsonForm">
+            <label for="jsonInput">Enter JSON:</label>
+            <textarea id="jsonInput" placeholder='{"data": ["A", "C", "z"]}'></textarea>
+            <p id="error" class="error"></p>
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div id="dropdownContainer" class="hidden">
+            <label for="options">Select Options:</label>
+            <select id="options" multiple>
+                <option value="Alphabets">Alphabets</option>
+                <option value="Numbers">Numbers</option>
+                <option value="Highest lowercase alphabet">Highest lowercase alphabet</option>
+            </select>
+        </div>
+
+        <div id="responseContainer" class="hidden">
+            <h2>Response</h2>
+            <div id="responseContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
